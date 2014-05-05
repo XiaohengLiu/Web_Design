@@ -1,0 +1,5 @@
+id,customer_id,stock_name,stock_short,stock_price,short_term,long_term,create_date
+2,2,AMAZON,AMZN,310.3299,Sell,Sell,"2014-05-01 17:24:39.660504"
+3,2,GOOGLE,GOOG,529.3901,Hold,Hold,"2014-05-01 17:24:41.874945"
+4,1,GOOGLE,GOOG,528.875,Sell,Sell,"2014-05-02 18:14:38.212992"
+5,1,AMAZON,AMZN,307.48,Sell,Sell,"2014-05-02 18:14:40.724888"

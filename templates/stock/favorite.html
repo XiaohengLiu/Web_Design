@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>My Favorite</title>
+    <link rel="stylesheet" href="/css/favorite.css?1398988590" />
+    <script type="text/javascript" src="/js/favorite.js?1398988590"></script>
+    <!--[if IE 6]>
+    <script> try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} </script>
+    <![endif]-->
+  </head>
+  <body id="w-body-aaaa" data-type="body" class="n-widget w-body t-body-default">
+    <div id="w-area-aaab" data-type="area" class="n-widget w-area">
+      <div id="w-text-aaac" data-type="text" class="n-widget w-text">
+      <font size="7"><b>My Favorite</b></font><br>
+      <p><a href = "http://127.0.0.1:8000/lindex/?userName=nby&password=nby&submit=Login">Return home</a></p>
+<ul>
+      </div>
+    </div>
+    {%for customer in usn%}
+    <div id="w-columnbox-aaad" data-type="columnbox" class="n-widget w-columnbox">
+        <div class="w-col" style="width:50%;">
+        <div id="w-area-aaae" data-type="area" class="n-widget w-area">
+          <div id="w-100002-form-aaaf" data-type="100002.form" class="n-widget w-100002-form t-100002-form-default">
+            <form method="get"
+                action="/add/{{customer.id}}/">
+  <div id="w-area-aaag" data-type="area" class="n-widget w-area">
+  <div id="w-100002-text-aaah" data-type="100002.text" class="n-widget w-100002-text">
+    <div class="form-group" data-comid="1" data-title="Add Favorite" data-required="0">
+  <label>Add Favorite <span class="required"></span></label>
+  <input name = "sname"type="text" class="form-control input" value="" style="width: 75%">
+  <input type = "submit" value = "ADD"/>
+  </div>
+  </div>
+</div>
+  <div id="w-button-aaai" data-type="button" class="n-widget w-button t-button-default">
+  <a href="javascript:void(0);" class="w-button-container w-button-fixed" id="w-button-aaai-b">
+  <span class="w-button-text"><i class="middle"></i><b class="text"></b></span><i class="w-button-right"></i>
+  </a>
+</div>
+  </form>
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:50%;">
+        <div id="w-area-aaaj" data-type="area" class="n-widget w-area">
+          <div id="w-100002-form-aaak" data-type="100002.form" class="n-widget w-100002-form t-100002-form-default">
+            <form method="get"
+                action="/delete/{{customer.id}}/">
+  <div id="w-area-aaal" data-type="area" class="n-widget w-area">
+  <div id="w-100002-text-aaam" data-type="100002.text" class="n-widget w-100002-text">
+    <div class="form-group" data-comid="1" data-title="Delete Favorite" data-required="0">
+  <label>Delete Favorite <span class="required"></span></label>
+  <input name = "sname" type="text" class="form-control input" value="" style="width: 75%">
+  <input type = "submit" value = "DELETE"/>
+  </div>
+  </div>
+</div>
+  <div id="w-button-aaan" data-type="button" class="n-widget w-button t-button-default">
+  <a href="javascript:void(0);" class="w-button-container w-button-fixed" id="w-button-aaan-b">
+  <span class="w-button-text"><i class="middle"></i><b class="text"></b></span><i class="w-button-right"></i>
+  </a>
+</div>
+  </form>
+          </div>
+        </div>
+        </div>
+    </div>
+    {%endfor%}
+    {%for favor in usr.favorite_set.all%}
+    <div id="w-columnbox-aaao" data-type="columnbox" class="n-widget w-columnbox">
+        <div class="w-col" style="width:33.191489361703%;">
+        <div id="w-area-aaap" data-type="area" class="n-widget w-area">
+          <div id="w-columnbox-aaaq" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaar" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaas" data-type="text" class="n-widget w-text">
+                Stock Name<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaat" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaau" data-type="text" class="n-widget w-text">
+                {{favor.stock_name}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aaav" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaaw" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaax" data-type="text" class="n-widget w-text">
+                Stock Price<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaay" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaaz" data-type="text" class="n-widget w-text">
+                {{favor.stock_price}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aabf" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabg" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabh" data-type="text" class="n-widget w-text">
+                <font size="2">Short-term prediction</font><br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabi" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabj" data-type="text" class="n-widget w-text">
+                {{favor.short_term}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aabk" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabl" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabm" data-type="text" class="n-widget w-text">
+                <font size="2">Long-term prediction</font><br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabn" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabo" data-type="text" class="n-widget w-text">
+                {{favor.long_term}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aabp" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabq" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabr" data-type="text" class="n-widget w-text">
+                Update Date<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabs" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabt" data-type="text" class="n-widget w-text">
+                {{favor.create_date}}
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:66.808510638298%;">
+        <div id="w-area-aabu" data-type="area" class="n-widget w-area">
+          <div id="w-area-aabv" data-type="area" class="n-widget w-area">
+            <div id="w-image-aabw" data-type="image" class="n-widget w-image">
+              <img src="http://chart.finance.yahoo.com/z?s={{favor.stock_short}}&t=6d" />
+            </div>
+            <div id="w-area-aabx" data-type="area" class="n-widget w-area">
+              <div id="w-text-aaby" data-type="text" class="n-widget w-text">
+              {{favor.stock_name}}<br>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    {%endfor%}
+  <!--custom footer start-->
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fce299e0fd4094e4d5efce40bab839811' type='text/javascript'%3E%3C/script%3E"));</script>
+<!--custom footer end-->
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Result</title>
+    <link rel="stylesheet" href="/css/sr.css?1398986564" />
+    <script type="text/javascript" src="/js/sr.js?1398986564"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+    <!--[if IE 6]>
+    <script> try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} </script>
+    <![endif]-->
+  </head>
+  <body id="w-body-aaaa" data-type="body" class="n-widget w-body t-body-default">
+{%if stocks%}
+	{%for stock in stocks%}
+    <div data-type="area" class="n-widget w-area">
+	<canvas id="myCanvas"></canvas>
+    	<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+    	<script type="text/javascript" src="/js/animate.js"></script>
+    </div>
+    <div id="w-columnbox-aaac" data-type="columnbox" class="n-widget w-columnbox">
+        <div class="w-col" style="width:33.191489361703%;">
+        <div id="w-area-aaad" data-type="area" class="n-widget w-area">
+          <div id="w-columnbox-aaae" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaaf" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaag" data-type="text" class="n-widget w-text">
+                Stock Name<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaah" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaai" data-type="text" class="n-widget w-text">
+                {{stock.stock_name}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aaaj" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaak" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaal" data-type="text" class="n-widget w-text">
+                Stock Price<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaam" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaan" data-type="text" class="n-widget w-text">
+                {{stock.stock_price}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aaao" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaap" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaaq" data-type="text" class="n-widget w-text">
+                Stock Volume<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaar" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaas" data-type="text" class="n-widget w-text">
+               {{stock.stock_volume}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aaat" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaau" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaav" data-type="text" class="n-widget w-text">
+                <font size="2">Short-term prediction</font><br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaaw" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaax" data-type="text" class="n-widget w-text">
+                {{stock.short_term}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aaay" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aaaz" data-type="area" class="n-widget w-area">
+                <div id="w-text-aaba" data-type="text" class="n-widget w-text">
+                <font size="2">Long-term prediction</font><br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabb" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabc" data-type="text" class="n-widget w-text">
+                {{stock.long_term}}
+                </div>
+              </div>
+              </div>
+          </div>
+          <div id="w-columnbox-aabd" data-type="columnbox" class="n-widget w-columnbox">
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabe" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabf" data-type="text" class="n-widget w-text">
+                Update Date<br>
+                </div>
+              </div>
+              </div>
+              <div class="w-col" style="width:50%;">
+              <div id="w-area-aabg" data-type="area" class="n-widget w-area">
+                <div id="w-text-aabh" data-type="text" class="n-widget w-text">
+                {{stock.upd_date}}
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:66.808510638298%;">
+        <div id="w-area-aabi" data-type="area" class="n-widget w-area">
+          <div id="w-area-aabj" data-type="area" class="n-widget w-area">
+            <div id="w-image-aabk" data-type="image" class="n-widget w-image">
+              <img src="http://chart.finance.yahoo.com/z?s={{stock.stock_short}}&t=6d" />
+            </div>
+            <div id="w-area-aabl" data-type="area" class="n-widget w-area">
+              <div id="w-text-aabm" data-type="text" class="n-widget w-text">
+              <a href = "http://127.0.0.1:8000/lindex/?userName=nby&password=nby&submit=Login">Click to return</a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  <!--custom footer start-->
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fce299e0fd4094e4d5efce40bab839811' type='text/javascript'%3E%3C/script%3E"));</script>
+<!--custom footer end-->
+{%endfor%}
+  {%else%}
+	<p>Not found</p>
+  {%endif%}
+  </body>
+</html>

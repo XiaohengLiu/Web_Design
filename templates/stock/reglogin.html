@@ -1,0 +1,7 @@
+{%if check%}
+	<p>register successfully</p>
+	<p><a href="/login/">click to login</a></p>
+{%else%}
+	<p>{{errormessage}}</p>
+	<p><a href="/register/">click to return</a></p>
+{%endif%}

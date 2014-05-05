@@ -1,0 +1,6 @@
+id,stock_name,stock_short,stock_price,short_term,long_term,stock_volume,upd_date
+1,GOOGLE,GOOG,528.875,Sell,Sell,1071554,"2014-05-02 18:14:38.212992"
+2,AMAZON,AMZN,307.48,Sell,Sell,2944135,"2014-05-02 18:14:40.724888"
+3,YAHOO,YHOO,36.51,Sell,Sell,19483326,"2014-05-02 00:49:32.527746"
+4,Microsoft,MSFT,40.0,"Buy More","Buy More",28791456,"2014-05-02 00:49:12.363135"
+5,APPLE,AAPL,591.48,"Buy More","Buy More",8721774,"2014-05-02 00:49:37.271958"

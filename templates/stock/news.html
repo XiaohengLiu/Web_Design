@@ -1,0 +1,5 @@
+<ul>
+{%for new in news%}
+	<li><a href="{{new.url}}">{{new.title}}      {{new.create_date}}</a></li>
+{%endfor%}
+</ul>

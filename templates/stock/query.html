@@ -1,0 +1,14 @@
+<p><a href="http://127.0.0.1:8000/admin/stocksys/stock/">the list of all companies in the database along with there altest price</a></p>
+<p>The highest price of Google in the last 10 days : {{hprice_google}}</p>
+<p>Average stock price of Microsoft in latest one year: {{avg_m}}</p>
+<p>Lowest price: </p>
+<div style="padding:0 30px 25px 30px">
+	<p>Google: {{l_g}}</p>
+	<p>Microsoft: {{l_m}}</p>
+	<p>Apple: {{l_a}}</p>
+	<p>Amazon: {{l_mz}}</p>
+	<p>Yahoo: {{l_yh}}</p>
+</div>
+{%for id in ids%}
+<p>IDs:{{id}}</p>
+{%endfor%}
